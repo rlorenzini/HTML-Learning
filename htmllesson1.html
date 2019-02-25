@@ -1,0 +1,62 @@
+
+
+
+<html> html is a top level tag, which means it starts and ends your page.
+<head>
+  <link rel="stylesheet" href="csslearning1.css"></link>
+</head>
+  <h1>
+Head tag is your page header, such as the top of the page, main focus, or such.</h1>
+
+  <body>
+    <h3>
+Body tag is your main content tag.</h3>
+<i>index.html</i> will be your <b>homepage/main page</b> (standard, but not required).
+When you open a tag, always close it.<p>Line-breaks must be opened and closed.</p>
+<h3>You can search to validate your html on certain webpages, which will tell you if you have headers that do not exist, conflict, aren't closed, etc.</h3>
+<ul>
+  <li>item1</li>
+  <li>item2</li>
+  <li>item3</li>
+</ul>
+<ol>
+  <li>ul for dots, ol for numbers, etc</li>
+  </ol>
+  <style>
+    .new-style {
+background-color: lightgreen; border: 3px solid black; color: blue; font-size: 42px
+
+
+
+    }
+    </style>
+<!-- in line styles are directly applied in the html document, but it is NOT a good idea. Creating a CSS file and importing is MUCH better.
+You only have to refer to the CSS style name to use a full style, and if you have to change one factor of the style you only have to change the style
+in the CSS file and not in EVERY INSTANCE I applied that style.
+Plus, putting everything into your HTML page makes download times much larger and there is a greater risk of errors.
+Your javascript and css files are SAVED in the browser's cache as COOKIES on the machine, whereas the HTML file is downloaded EVERY SINGLE TIME.
+That is why a website will load faster the second time you visit it; the majority of the files are saved on your browser.
+
+IN LINE STYLE ALWAYS WINS OVER IMPORTED STYLING. You can take a reusable style and modify it with in line styling without changing the source code.
+</style> -->
+<div style="border: 5px solid red">
+Using a div tag allows you to divide your webpage into different portions. UL, LI, and DIV are used a lot.
+  </div>
+<div>
+<h1>Using a div tag allows you to style different parts of your website independent of other parts.</h1>
+<h4>Then you can create a unique section of your website.</h4>
+</div>
+    </body>
+
+<div style="background-color: lightgreen; border: 3px solid black">CSS - cascading style sheet - is used to style a webpage. Just like with tags, there are an immense number and variety of styles.
+  <p style="font-size: 24px">Look up styles and tag as you need them instead of trying to memorize them.</p><p style="color: blue">CSS does the stylesl html cannot style on its own.</p>
+  </div>
+
+<div class="new-style">
+Testing using a class to style instead of in line styling. Remember, in line styling will always win over imported styling.
+  </div>
+<div class="new-style1">CSS files are saved as cookies on the browser. Importing styles from the saved file reduces repeat load times and download sizes.
+  Both the client's computer and the creator's server suffer from large HTML file sizes.
+  </div>
+
+</html>
