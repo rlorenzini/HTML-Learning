@@ -1,3 +1,19 @@
 .new-style1 {
 background-color: black; color: white; font-size: 32px
 }
+.link-style1 {
+background-color: green; color: white
+}
+a {
+  text-decoration: none
+}
+ul {
+  list-style: none
+}
+/* if you want to apply a style to an element create a class for the relevant TAG  */
+ul {
+  li {
+    background-color: orange; color: black
+  }
+}
+/* styles to look at are MARGIN, BORDER, and PADDING  */
