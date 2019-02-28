@@ -1,0 +1,71 @@
+#container {
+display: flex;
+flex-direction: column;
+}
+#list {
+  list-style: none;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+#list li {
+  padding: 5px;
+  padding-left: 100px;
+  text-align: center;
+}
+#ad-banner {
+  background-image: url(flag.jpg);
+  background-color: #cccccc;
+  background-blend-mode: lighten;
+  height: 100px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+}
+#ad-banner div {
+  display: flex;
+  background-image: url(red-ribbon.jpg);
+  background-color: #cccccc;
+  background-blend-mode: darken;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#content {
+  display: flex;
+  flex-direction: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#content ul {
+list-style: none;
+height: auto;
+text-align: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+padding-top: 20px;
+}
+#content ul p {
+  max-width: 200px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#content img {
+  width: 200px;
+  height: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}

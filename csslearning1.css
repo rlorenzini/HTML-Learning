@@ -1,6 +1,6 @@
-.new-style1 {
+/* .new-style1 {
 background-color: black; color: white; font-size: 32px
-}
+/* }
 .link-style1 {
 background-color: green; color: white
 }
@@ -9,11 +9,111 @@ a {
 }
 ul {
   list-style: none
-}
+} */ 
 /* if you want to apply a style to an element create a class for the relevant TAG  */
-ul {
+/* ul {
   li {
     background-color: orange; color: black
   }
-}
+} */
 /* styles to look at are MARGIN, BORDER, and PADDING  */
+
+
+
+/* default layout == STATIC (also known as FLOAT layout), meaning TOP to BOTTOM  */
+/* this is by default and can be changed  */
+
+/*POSITION, DISPLAY, TOP, LEFT, etc manipulates an element outside the general layout */
+/*POSITION can be relative, absolute, and other states. If RELATIVE, other elements can treat them as a parent element.  */
+/*If ABSOLUTE, they are where they are no matter what.  */
+
+
+/* MOBILE DEVELOPMENT */
+
+/* you can make two websites, one for desktop and one for mobile, or create one interchangeable website (using meta, @media, and max-size) */
+/* one independent website allows for much more control over the mobile website, but takes significantly more time */
+/* using one url with a responsive design is becoming the standard, and is preferred by Google (hint hint) */
+
+
+/* FLEXBOX has minimal settings but an endless combination to create unique outputs */
+/* you tell FLEXBOX row or columns (and which is for desktop and mobile) */
+
+/* flex container is the parent which contains the items that will change between row and column (menu items, list, etc) */
+/* the flex container can be a div, ul and li, body, anything */
+/* flex items are the items which will be changed between row and column, and can be flex containers themselves */
+/* TAKE REALLY SMALL STEPS to prevent tons of back tracking */
+
+/* justify content is the MAIN AXIS of the row or column and align items is the opposite axis */
+/* flex wrap is great for images, long menus, easy desktop to mobile changes */
+@media only screen and (min-device-width: 321px) and (max-device-width: 480px){
+body {
+  background-color: green;
+}
+#menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 50px;
+  }
+  #deal {
+    display: none;
+  }
+}
+#menu {
+  list-style-type: none;
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: center;
+  height: 200px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#menu li {
+  padding: 50px;
+}
+#deal {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  text-align: center;
+}
+#phones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: orange;
+}
+.promo {
+  width: 30%;
+  height: auto;
+}
+.options {
+  display: flex;
+}
+.options div {
+  padding: 5px;
+}
+
+
+
+/* CSS GRID is newer than FLEXBOX and allows for more creative design, such as doing columns and rows together */
+/* use whichever one best suits the demands of your design */
+
+
+
+
+/* MEDIA QUERIES */
+/* @media only screen and (min-width: XXXpx) and (max-width: XXXpx) {body{code}} */
+
+
+
+
+
+
+/* #ID VS .CLASS */
+/* quick answer is it doesn't matter much; they're almost completely interchangeable */
+/* one option is to use IDs for one element and CLASSES for multiple elements */
+/* using both can help organization so you know "ID is for only one item, CLASS can be used all over my website" */
