@@ -1,0 +1,51 @@
+.whole-page {
+  background-image: url(giphy.gif);
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  justify-content: center;
+  align-items: center;
+}
+.header h1 {
+  background-color: blue;
+  color: black;
+  padding: 1%;
+}
+
+.main-body p {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media only screen and (min-device-width: 1px) and (max-device-width: 350px) {
+  .whole-page {
+    background-image: url(404error.gif);
+  }
+
+  .mobile-only {
+    color: black;
+    text-align: center;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .main-body {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=sassexercise.css.map */
